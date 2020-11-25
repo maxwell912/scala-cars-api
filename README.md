@@ -15,8 +15,10 @@ $ docker-compose up
    -  /cars/statistic - return map with statistic values
 -  POST
    -  /cars/add - insert car with specified in json values
-      -  number(String) Unique Pattern: A333AA33 / A333AA133
-      -  model(String) Car model
+      -  number(String)
+         -  Unique
+         -  Pattern: A333AA33 / A333AA133
+      -  model(String) - Car model
       -  kind(String)
       -  color(String)
       -  year(Int) Production year 
