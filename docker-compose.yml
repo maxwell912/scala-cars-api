@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  web:
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/app
+
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: default
+      POSTGRES_USER: ivan
+      POSTGRES_PASSWORD: 123456
